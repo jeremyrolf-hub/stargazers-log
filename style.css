@@ -1,0 +1,139 @@
+:root {
+  color-scheme: light;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #17212b;
+  background: #f4f1ea;
+  --ink: #17212b;
+  --muted: #61707a;
+  --paper: #fffdf8;
+  --line: #d9d2c4;
+  --accent: #b45309;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: linear-gradient(135deg, #f4f1ea 0%, #ebe5d9 100%);
+}
+
+main {
+  width: min(100% - 2rem, 860px);
+  margin: 0 auto;
+  padding: 4rem 0 5rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--accent);
+  font: 700 0.78rem/1.2 system-ui, sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 12ch;
+  margin: 0;
+  font-size: clamp(2.75rem, 8vw, 5.5rem);
+  line-height: 0.95;
+  font-weight: 400;
+}
+
+.intro {
+  max-width: 36rem;
+  margin: 1.25rem 0 3rem;
+  color: var(--muted);
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.status {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font: 0.85rem/1.4 system-ui, sans-serif;
+}
+
+.repository-list {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+}
+
+.repository {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem 2rem;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+  box-shadow: 0 5px 0 rgba(23, 33, 43, 0.04);
+}
+
+.repository h2 {
+  margin: 0;
+  font: 700 1.25rem/1.2 system-ui, sans-serif;
+}
+
+.repository h2 a {
+  color: var(--ink);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
+.repository h2 a:hover,
+.repository h2 a:focus-visible {
+  color: var(--accent);
+}
+
+.description {
+  margin: 0.7rem 0 1.25rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.25rem;
+  margin: 0;
+  color: var(--muted);
+  font: 0.8rem/1.4 system-ui, sans-serif;
+}
+
+.metadata span {
+  white-space: nowrap;
+}
+
+.date {
+  align-self: start;
+  color: var(--muted);
+  font: 0.78rem/1.4 system-ui, sans-serif;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.empty-state {
+  padding: 2rem;
+  border: 1px dashed var(--line);
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  main {
+    padding-top: 2.5rem;
+  }
+
+  .repository {
+    grid-template-columns: 1fr;
+  }
+
+  .date {
+    grid-row: 1;
+    text-align: left;
+  }
+}
