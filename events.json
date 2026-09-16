@@ -1,0 +1,50 @@
+[
+  {
+    "id": "star-001",
+    "type": "WatchEvent",
+    "created_at": "2026-09-12T14:30:00Z",
+    "repo": {
+      "name": "octocat/Spoon-Knife",
+      "url": "https://github.com/octocat/Spoon-Knife",
+      "description": "A friendly repository for learning the basics of GitHub.",
+      "language": "HTML",
+      "stargazers_count": 12500
+    }
+  },
+  {
+    "id": "star-002",
+    "type": "WatchEvent",
+    "created_at": "2026-09-07T09:15:00Z",
+    "repo": {
+      "name": "microsoft/Web-Dev-For-Beginners",
+      "url": "https://github.com/microsoft/Web-Dev-For-Beginners",
+      "description": "A 12-week curriculum for getting started with web development.",
+      "language": "JavaScript",
+      "stargazers_count": 9100
+    }
+  },
+  {
+    "id": "star-003",
+    "type": "WatchEvent",
+    "created_at": "2026-08-29T18:45:00Z",
+    "repo": {
+      "name": "github/docs",
+      "url": "https://github.com/github/docs",
+      "description": "The open-source repository for GitHub's documentation.",
+      "language": "JavaScript",
+      "stargazers_count": 17000
+    }
+  },
+  {
+    "id": "star-004",
+    "type": "WatchEvent",
+    "created_at": "2026-08-18T11:00:00Z",
+    "repo": {
+      "name": "TheAlgorithms/JavaScript",
+      "url": "https://github.com/TheAlgorithms/JavaScript",
+      "description": "Algorithms and data structures implemented in JavaScript.",
+      "language": "JavaScript",
+      "stargazers_count": 31000
+    }
+  }
+]
